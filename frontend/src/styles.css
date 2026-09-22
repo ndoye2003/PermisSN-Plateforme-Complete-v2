@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Drapeau du Sénégal décoratif */
+.flag-banner {
+  background: linear-gradient(90deg, #00853F 0%, #00853F 33.33%, #FDEF42 33.33%, #FDEF42 66.66%, #E31B23 66.66%, #E31B23 100%);
+  height: 4px;
+  width: 100%;
+}
+
+/* Styles d'impression pour la convocation officielle */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: #fff !important;
+  }
+}
